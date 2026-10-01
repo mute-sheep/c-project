@@ -1,0 +1,6 @@
+*.o
+*.out
+*.exe
+c-project
+contacts.txt
+contacts-windows.bin

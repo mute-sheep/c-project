@@ -1,0 +1,20 @@
+#import "list.h"
+
+//判断数字输入是否合法
+int legal_input_int(int min,int max){
+	printf("请输入数字\n");
+	int n;
+	while(1){
+		if(scanf("%d",&n) != 1){
+			printf("非法输入\n");
+			while(getchar() != '\0');
+			continue;
+		}
+		if(n < min || n > max){
+			printf("输入越界(请输入%d-%d)\n",min,max);
+			continue;
+		}
+		printf("\n");
+		return n;
+	}
+}
